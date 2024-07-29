@@ -1,15 +1,77 @@
 :root {
-    background-color: darkolivegreen;
-    color: hsl(50, 50, 50);
+    --main-color:  #f35f3b;
+    --second-color: #fec268;
+    --main-bg-color: #ffedd1;
+    --second-bg-color: #5af9c3;
+    --color-accent: hsl(157, 90%, 80%);
     font-family: Ubuntu, Georgia, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+body {
+    padding-top: 20px;
+    text-align: center;
+    background-color: var(--second--color);
+    color: var(--main-bg-color);
+    text-shadow: 0 0 4px var(--main-color), 0 0 3px black;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+form {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid var(--color-accent);
+    border-radius: 5px;
+    background: var(--second-color);
 }
 
 input, button,
-select, 
 textarea {
-    margin: 0 0 20px 0;
+    /* margin: 0 0 20px 0; */
     font-family: inherit;
     font-size: 100%;
-    color: inherit;
+    color: var(--main-bg-color);
+    text-shadow: 0 0 3px var(--main-color), 0 0 2px black;
+    background: var(--color-accent);
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    min-width: 150px;
+    text-align: right;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffedd1;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: 2em;
 }
