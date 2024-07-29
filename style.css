@@ -1,0 +1,15 @@
+:root {
+    background-color: darkolivegreen;
+    color: hsl(50, 50, 50);
+    font-family: Ubuntu, Georgia, sans-serif;
+    font-size: 1.5rem;
+}
+
+input, button,
+select, 
+textarea {
+    margin: 0 0 20px 0;
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+}
